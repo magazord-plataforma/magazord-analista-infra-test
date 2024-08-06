@@ -4,9 +4,9 @@
  
  </div>
 
-# Teste para vaga de DevOps no Magazord.com.br
-Este repositório tem como finalidade avaliar os candidatos para vaga de devOps na empresa [Magazord](https://magazord.com.br).
-> Para esta vaga buscamos alguém apaixonado por tecnologia e esteja sempre atento aos detalhes!
+# Teste para vaga de Analista de Infraestrutura - Magazord
+Este repositório tem como finalidade avaliar os candidatos para vaga de Analista de Infraestrutura na empresa [Magazord](https://magazord.com.br).
+> Para esta vaga buscamos alguém apaixonado por tecnologia e atento aos detalhes!
 
 
 ## O teste
@@ -24,19 +24,24 @@ As questões aqui apresentadas visam avaliar o nível de conhecimento do candida
 > Todos os scripts desenvolvidos devem ter cada etapa documentada;
 
 > [!NOTE]
-> Após finalizado, os códigos/documentos gerados devem ser disponibilizados em repositório GitHub para download.
 > Para correta validação das atividades, lembre-se de expor publicamente as portas necessárias e fornecer as credenciais para acesso à instância criada.
 
-Com base no cenário abaixo apresentado, elabore soluções e respostas para as questões apresentadas após a imagem.
+![Modelagem](teste-analista-infra.png)
 
-![Modelagem](testeAWS.png)
+> Estrutura na AWS:
+  - EC2
+  - PostgreSQL v13
+  - Apache
+  - Zabbix
+  - Firewall
 
 ## Questões:
 
-  1. Crie a estrutura proposta (imagem anterior) na AWS usando Infraestrutura como Código (IaC) com Terraform, na região us-east-1:
+
+
+  1. Crie a estrutura proposta (imagem anterior) na AWS, na região us-east-1:
      - Virtual Private Cloud (VPC);
-       - Ec2 Instance (t2.micro se enquadra em free tier);
-         - Docker
+       - EC2 Instance (t2.micro se enquadra em free tier);
          - PostgreSQL 13
   2. Publique na instância EC2 criada anteriormente, uma página PHP qualquer em container (ex. Hello World), utilizando imagem PHP + Apache no Docker;
   3. Ainda na instância EC2, configure o serviço de banco de dados PostgreSQL instalado anteriormente para responder apenas às requisições da máquina local.
